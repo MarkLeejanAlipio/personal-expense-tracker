@@ -122,14 +122,6 @@ main {
     opacity: 0.8;
 }
 
-.expense-add-container .expense:focus,
-.expense-add-container .amount:focus,
-.expense-add-container .expense-add-btn:focus,
-.tracker-top .tracker-btn:focus {
-    outline: 2px solid #185fa5;
-    outline-offset: 2px;
-}
-
 /* Expense Tracker */
 .expense-tracker {
     display: flex;
