@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: rgb(233, 233, 233);
+    background-color: #f5f4f0;
     display: flex;
     justify-content: center;
     padding: 50px;
 }
 
 main {
-    width: 600px;
+    width: 550px;
     height: auto;
 }
 
@@ -23,10 +23,47 @@ main {
 }
 
 .header h2 {
-    font-size: 25px;
+    font-size: 25px; 
 }
 
 .header p {
     color: #888780;
 }
 
+/* Expense Container */
+
+.expense-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.expense-calculate {
+    display: flex;
+    gap: 10px;
+}
+
+.calculate {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+    border: 0.5px solid #d3d1c7;
+    border-radius: 10px;
+}
+
+.calculate-name {
+    font-size: 11px;
+    color: #888780;
+}
+
+.total, .average {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.total {
+    color: #185fa5;
+}
