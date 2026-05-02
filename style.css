@@ -24,6 +24,7 @@ main {
 
 .header h2 {
     font-size: 25px; 
+    font-weight: 300;
 }
 
 .header p {
@@ -31,13 +32,13 @@ main {
 }
 
 /* Expense Container */
-
 .expense-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Expense Calculate */
 .expense-calculate {
     display: flex;
     gap: 10px;
@@ -54,7 +55,7 @@ main {
     border-radius: 10px;
 }
 
-.calculate-name {
+.calculate-name, .expense-name {
     font-size: 11px;
     color: #888780;
 }
@@ -66,4 +67,50 @@ main {
 
 .total {
     color: #185fa5;
+}
+
+/* Expense Add */
+.expense-add {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border: 0.5px solid #d3d1c7;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.expense-add-container {
+    display: flex;
+    gap: 10px;
+}
+
+.expense-add-container .expense, .amount {
+    color: #1a1a18;
+    padding: 9px 12px;
+    border: 0.5px solid #d3d1c7;
+    border-radius: 8px;
+    background: #f5f4f0;
+    font-size: 14px;
+}
+
+.expense-add-container .expense {
+    flex: 2;
+}
+
+.expense-add-container .expense-add-btn {
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: #1a1a18;
+    border: none;
+    border-radius: 8px;
+    padding: 0 18px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.expense-add-container .expense-add-btn:hover {
+    opacity: 0.8;
 }
