@@ -122,6 +122,15 @@ main {
     opacity: 0.8;
 }
 
+.expense-add-container .expense:focus,
+.expense-add-container .amount:focus,
+.expense-add-container .expense-add-btn:focus,
+.tracker-top .tracker-btn:focus,
+.expense-item .delBtn:focus {
+    outline: 2px solid #185fa5;
+    outline-offset: 2px;
+}
+
 /* Expense Tracker */
 .expense-tracker {
     display: flex;
@@ -170,6 +179,40 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 0.5px solid #d3d1c7;
+    border-radius: 10px;
+    background-color: white;
+    color: #1a1a18;
+    font-size: 14px;
+}
+
+.expense-item .delBtn {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    border: 0.5px solid #f1c1c1;
+    border-radius: 999px;
+    background-color: #fff5f5;
+    color: #a32d2d;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.expense-item .delBtn:hover {
+    background-color: #ffe7e7;
+    border-color: #f09595;
+}
+
+[hidden] {
+    display: none !important;
 }
 
 .sr-only {
